@@ -29,7 +29,7 @@ int main() {
 	// v2 contains: [10,20,30]
 
 	// Declare some int array
-	int A[] = {1,2,3,4,5};
+	int A[] = { 1,2,3,4,5 };
 
 
 	v1.pushBack(A, 5);
@@ -54,14 +54,20 @@ int main() {
 	v2[2] = 100;
 	// V2 contains: [540,1260,100]
 
-	(v1 - v2).print();
-	// should be [-522,-1239,-68,3,4,5] 
-	(v1 / v2).print();
-	// should be [0,0,0,3,4,5]
-	(v2 / v1).print();
-	// should be [30,60,3]
+	// push values onto v2
+	v2.pushBack(2);
+	v2.pushBack(35);
+	v2.pushBack(200);
 
-	if (v1== v2){
+	(v1 - v2).print();
+	// should be [-522,-1239,-68,1,-31,-195] 
+	(v1 / v2).print();
+	// should be [0,0,0,1,0,0]
+	(v2 / v1).print();
+	// should be [30,60,3,0,8,40]
+
+	// tests if v1 and v2 are equal
+	if (v1 == v2) {
 		cout << "v1 and v2 are equal \n";
 	}
 	else
