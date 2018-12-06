@@ -1,4 +1,4 @@
-#Access Modifiers in C++
+## Access Modifiers in C++
 
 Access modifiers are used to implement an important feature of Object Oriented Programming known as **Data Hiding**. Consider a real-life example: Consider Indian secret informatic system having 10 senior members, have some top secret regarding national security. So we can think that 10 people as class data members or member functions who can directly access secret information from each other But anyone can’t access this information other than this 10 members i.e. outside person can’t access information directly without having any privileges, This is what data hiding is.
 Access modifiers or Access Specifiers in a class are used to set the accessibility of the class members. That is, it sets some restrictions on the class members not to get directly accessed by the outside functions.
@@ -8,6 +8,7 @@ There are 3 types of access modifiers available in C++:
 1. **Public**
 2. **Private**
 3. **Protected**
+
 **Note**: If we do not specify any access modifiers for the members inside the class then by default the access modifier for the members will be **Private**.
 
 
